@@ -3,22 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A complex design for grid</title>
+    <title>Compleax design with grid</title>
+    <style>
+        .nav{
+            border: 1px solid darkblue;
+            height: 20px;
+            background-color: aqua;
+        }
+        .section-container{
+            border: 1px solid red;
+            height: 100%;
+        }
+        .main-section{
+            height: 90vh;
+        }
+        .cards{
+            background-color: aqua;
+            height: 20px;
+        }
+        .one{
+            background-color: cadetblue;
+            height: 35px;
+        }
+        .two{
+            background-color: skyblue;
+            height: 80px;
+            display: flex;
+        }
+        .three{
+            background-color: cadetblue;
+            height: 30px;
+        }
+        .four{
+            background-color: skyblue;
+            height: 30px;
+        }
+        .five{
+            background-color: cadetblue;
+            height: 28px;
+        }
+        .two>.two-1st{
+            width: 33.33%;
+            height: auto;
+            background-color: rgb(2, 93, 62);
+        }
+        .two>.two-2nd{
+            height: auto;
+            width: 33.33%;
+            background-color: rgb(56, 61, 59);
+        }
+        .two>.two-3rd{
+            width: 33.33%;
+            height: auto;
+            background-color: rgb(127, 62, 111);
+        }
+        .two>.two-3rd-el{
+            height: auto;
+            width: 50%;
+            background-color: darkseagreen;
+        }
+        .two>.two-3rd > .two-3rd-2el{
+            height: auto;
+            width: 50%;
+            background-color: cyan;
+        }
+
+        .footer{
+            background-color: aquamarine;
+            height: 20;
+        }
+    </style>
 </head>
 <body>
-    <header class="header-container">
-        <nav>
+    <section class="section-container">
+        <nav class="nav section">
 
         </nav>
-    </header>
-    <main class="body-container">
-        <div class="first-div"></div>
-        <div class="scnd-div"></div>
-        <div class="thrd-div"></div>
-        <div class="frth-div"></div>
-    </main>
-    <footer class="footer-container">
+        <main class="main section">
+            <div class="cards one"></div>
+            <div class="cards two">
+                <div class="two-1st"></div>
+                <div class="two-2nd"></div>
+                <div class="two-3rd">
+                    <div class="two-3rd-el"></div>
+                    <div class="two-3rd-2el"></div>
+                </div>
+            </div>
+            <div class="cards three"></div>
+            <div class="cards four"></div>
+            <div class="cards five"></div>
+        </main>
+        <footer class="footer section">
 
-    </footer>
+        </footer>
+    </section>
 </body>
 </html>
